@@ -5,7 +5,7 @@
     "guid": "67c2e23b-9fc2-44f4-87ee-26e14621c542",
     "isActive": false,
     "balance": "$1,082.66",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/male1.jpg",
     "age": 26,
     "eyeColor": "green",
     "name": {
@@ -63,7 +63,7 @@
     "guid": "e4e59df2-2dee-4466-a44e-7b8de9ffa23c",
     "isActive": false,
     "balance": "$2,226.39",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/female1.jpg",
     "age": 35,
     "eyeColor": "green",
     "name": {
@@ -120,7 +120,7 @@
     "guid": "3b954b2f-1c31-4a79-ae5e-fc7a4689f7fe",
     "isActive": true,
     "balance": "$2,279.31",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/male2.jpg",
     "age": 30,
     "eyeColor": "blue",
     "name": {
@@ -177,7 +177,7 @@
     "guid": "3e9411e4-b512-48ae-94b0-a6d04caf9fc7",
     "isActive": false,
     "balance": "$3,075.10",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/female2.jpg",
     "age": 28,
     "eyeColor": "blue",
     "name": {
@@ -234,7 +234,7 @@
     "guid": "1593750d-f9a5-43e5-859d-51aa1065e487",
     "isActive": false,
     "balance": "$2,724.39",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/female3.jpg",
     "age": 20,
     "eyeColor": "green",
     "name": {
@@ -291,7 +291,7 @@
     "guid": "d0f108cb-a859-42c8-8b30-bca48a5731cf",
     "isActive": false,
     "balance": "$2,093.37",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/female4.jpg",
     "age": 31,
     "eyeColor": "blue",
     "name": {
@@ -348,7 +348,7 @@
     "guid": "6e1ecc4b-2882-4ac7-ab3c-058792218d5d",
     "isActive": true,
     "balance": "$3,944.73",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/male3.jpg",
     "age": 28,
     "eyeColor": "brown",
     "name": {
@@ -405,7 +405,7 @@
     "guid": "5f43fcd2-2f77-439c-901e-953a9d516b1b",
     "isActive": true,
     "balance": "$2,669.29",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/female5.jpg",
     "age": 36,
     "eyeColor": "blue",
     "name": {
@@ -462,7 +462,7 @@
     "guid": "da082371-e106-450b-98dc-aae6cb558e7a",
     "isActive": false,
     "balance": "$2,381.76",
-    "picture": "http://placehold.it/32x32",
+    "picture": "img/female6.jpg",
     "age": 23,
     "eyeColor": "brown",
     "name": {

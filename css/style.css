@@ -25,8 +25,8 @@ h1{
    0 20px 20px rgba(0,0,0,.15);
 }
 
-.tabs{
-  display: inline-block;
+tab{
+  display: block;
   margin: 5rem 10rem 0rem 10rem;
   width: 80%;
 }

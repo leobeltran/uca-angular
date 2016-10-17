@@ -1,5 +1,12 @@
 ;(function(window){
-  angular.module('app',[])
+  angular.module('peopleApp',[])
+
+  .controller('PeopleListCtrl', function ($scope, $http){
+    $http.get('json/people.json').success(function(data) {
+      $scope.peoples = data;
+    });
+  })
+
   .directive('tab', function(){
     return {
       restrict: 'E',
