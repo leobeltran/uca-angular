@@ -1,10 +1,36 @@
 ;(function(window){
-  angular.module('peopleApp',[])
+  angular.module('peopleApp',['ngRoute'])
+
+  .config(function($routeProvider) {
+    $routeProvider.
+      when('/', {
+        templateUrl: 'views/people.html',
+        controller: 'PeopleListCtrl'
+      }).
+      when('/:id', {
+        templateUrl: 'views/person-detail.html',
+        controller: 'PersonDetailCtrl'
+      }).
+      otherwise({
+        redirectTo: '/'
+      });
+  })
 
   .controller('PeopleListCtrl', function ($scope, $http){
     $http.get('json/people.json').success(function(data) {
       $scope.peoples = data;
     });
+  })
+
+  .controller('PersonDetailCtrl', function($scope,$routeParams,$http){
+    $scope.id = $routeParams.id;
+    $http.get('json/people.json').success(function(data){
+      var person = data.filter(function(entry){
+        if(entry.index == $scope.id){
+          return entry;
+        }
+      })[0];
+    })
   })
 
   .directive('tab', function(){

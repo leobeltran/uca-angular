@@ -25,10 +25,11 @@ h1{
    0 20px 20px rgba(0,0,0,.15);
 }
 
-tab{
+.leaders{
   display: block;
   margin: 5rem 10rem 0rem 10rem;
   width: 80%;
+  border: 1px solid black;
 }
 
 .input-group{
