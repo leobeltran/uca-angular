@@ -1,11 +1,11 @@
 .header{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   background-image: url("/img/aerial-neighborhood.jpg");
   background-size: cover;
   background-position: center;
   height: 20rem;
+}
+.main{
+  width: 95%;
 }
 
 h1{
@@ -23,13 +23,6 @@ h1{
    0 5px 10px rgba(0,0,0,.25),
    0 10px 10px rgba(0,0,0,.2),
    0 20px 20px rgba(0,0,0,.15);
-}
-
-.leaders{
-  display: block;
-  margin: 5rem 10rem 0rem 10rem;
-  width: 80%;
-  border: 1px solid black;
 }
 
 .input-group{

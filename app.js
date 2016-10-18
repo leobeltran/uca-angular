@@ -25,7 +25,7 @@
   .controller('PersonDetailCtrl', function($scope,$routeParams,$http){
     $scope.id = $routeParams.id;
     $http.get('json/people.json').success(function(data){
-      var person = data.filter(function(entry){
+      $scope.person = data.filter(function(entry){
         if(entry.index == $scope.id){
           return entry;
         }

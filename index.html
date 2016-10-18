@@ -8,17 +8,23 @@
   </head>
   <body ng-app="peopleApp">
 
-    <div class="header">
-      <h1>United Communities Association</h1>
-    </div>
+    <header>
+      <div class="header">
+        <h1>United Communities Association</h1>
+      </div>
+    </header>
 
-    <div ng-view></div>
+
+    <section>
+      <div ng-view></div>
+    </section>
+
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
     <script src="app.js"></script>
 
-    </script>
+
 
   </body>
   </html>
