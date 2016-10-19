@@ -1,76 +1,154 @@
 <tabset>
-<tab heading="Leaders Near You">
-  <div class="input-group">
-    <span class="input-group-btn">
-      <input ng-model="query" style="width:400px" type="text" class="form-control" placeholder="Search...">
-    </span>
-  </div>
-  <div class="leaders">
-    <div class="row">
-      <div class="col-sm-5 col-md-2" ng-repeat="people in peoples | filter: query | orderBy: 'name.last'" >
-          <div class="thumbnail">
-              <img style="width:250px;height:250px;" src={{people.picture}} alt="{{people.name.fist}} {{people.name.last}}">
-              <div class="caption">
-                <h3>{{people.name.first}} {{people.name.last}}</h3>
-                <p>{{people.email}}</p>
-                <p>
-                  <a href="#/{{people.index}}" class="btn btn-primary" role="button">More Info</a>
-                  <a href="#" class="btn btn-default" role="button">Contact</a>
-                </p>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
+    <tab heading="Leaders Near You">
+        <div class="input-group">
+            <span class="input-group-btn">
+                <input ng-model="query" style="width:400px" type="text" class="form-control" placeholder="Search...">
+            </span>
+        </div>
+        <div class="leaders">
+            <div class="row">
+                <div class="col-sm-3 col-md-3" ng-repeat="people in peoples | filter: query | orderBy: 'name.last'">
+                    <div class="thumbnail">
+                        <img style="width:250px;height:250px;" src={{people.picture}} alt="{{people.name.fist}} {{people.name.last}}">
+                        <div class="caption">
+                            <h3>{{people.name.first}}
+                                {{people.name.last}}</h3>
+                            <p>{{people.email}}</p>
+                            <p>
+                                <a href="#/{{people.index}}" class="btn btn-primary" role="button">More Info</a>
+                                <a class="btn btn-default" role="button">Contact</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</tab>
+    </tab>
 
-<tab heading="Register Community" class="main">
-  <div class="container">
-    <div class="title">
-      <h2>Register Your Community</h2>
-    </div>
-    <div class="form">
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon1">
-        <input type="text" class="form-control" placeholder="First name" aria-describedby="sizing-addon1">
-        <input type="text" class="form-control" placeholder="Last name" aria-describedby="sizing-addon1">
-        </span>
-      </div>
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon  glyphicon glyphicon-inbox" id="sizing-addon1">
-        <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
-        </span>
-      </div>
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon glyphicon glyphicon-globe" id="sizing-addon1">
-        <input type="text" class="form-control" placeholder="Community Location" aria-describedby="sizing-addon1">
-        </span>
-      </div>
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon1">
-        <input type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
-        </span>
-      </div>
-    </div>
-  </div>
-</tab>
+    <tab heading="Register Community" class="main">
+        <div class="container">
+            <div class="title" id="register">
+                <div class="header">
+                    <h2>Register Your Community</h2>
+                    <p>
+                        By Registering your comminuty Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
 
-<tab heading="About">
-  <div class="container">
-    <div class="title-detail">
-      <h2>"hello"</h2>
-    </div>
-    <div class="about">
-      <small>ABOUT</small>
-      <h2>United Communities Association</h2>
-      <span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </span>
-    </div>
+            </div>
+            <div class="panel panel-primary">
 
+                <form action="#" method="post" accept-charset="utf-8">
+                    <div class="modal-body" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                <small>Firstname</small>
+                                <input class="form-control" name="firstname" type="text" required autofocus/>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                <small>Lastname</small>
+                                <input class="form-control" name="lastname" type="text" required/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                <small>E-mail</small>
+                                <input class="form-control" name="email" type="text" required/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                <small>Contact number</small>
+                                <input class="form-control" name="subject" type="text" required/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <small>Message</small>
+                                <textarea style="resize:vertical;" class="form-control" rows="6" name="comment" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer" style="margin-bottom:-14px;">
+                        <input type="submit" class="btn btn-info" value="Send"/>
+                        <!--<span class="glyphicon glyphicon-ok"></span>-->
+                        <input type="reset" class="btn btn-danger" value="Clear"/>
+                        <!--<span class="glyphicon glyphicon-remove"></span>-->
+                    </div>
+                </div>
 
+            </div>
 
-  </div>
-</tab>
+        </div>
+    </tab>
+
+    <tab heading="About">
+        <div class="container">
+            <div class="title" id="about"></div>
+            <div class="about">
+                <small>ABOUT</small>
+                <h2>United Communities Association</h2>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </span>
+
+                <hr>
+                <br><br>
+
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" style="width:100px;height:100px;" src="/img/community-awards.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Community Award Winner</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" style="width:90px;height:90px;" src="/img/CommunitasAward.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Communidades Unidas</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" style="width:90px;height:90px;" src="/img/excellence.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Humanitarian Recognition</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </tab>
 </tabset>

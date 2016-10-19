@@ -1,18 +1,58 @@
-<div class="jumbotron">
-  <div class="thumbnail">
-      <img style="width:250px;height:250px;" src={{person.picture}} alt="...">
-      <div class="caption">
-        <small>Name</small>
-          <h3>{{person.name.first}} {{person.name.last}}</h3>
-          <small>Email</small>
-          <p>{{person.email}}</p>
-          <small>About</small>
-          <p>{{person.about}}</p>
-          <p>
-              <a class="btn btn-default" role="button">Contact</a>
+<div class="container">
+    <div class=".col-xs-6 .col-md-4">
+        <div class="jumbotron">
+            <div class="thumbnail" id="detail">
+                <img style="width:250px;height:250px;" src={{person.picture}} alt="...">
+                <div class="caption">
+                    <small>Name</small>
+                    <h3>{{person.name.first}}
+                        {{person.name.last}}</h3>
+                    <small>Email</small>
+                    <p>{{person.email}}</p>
+                    <small>About</small>
+                    <p>{{person.about}}</p>
+                    <small>Town Hall</small>
+                    <p>{{person.address}}</p>
+                    <small>Phone</small>
+                    <p>{{person.phone}}</p>
 
-          </p>
-      </div>
-  </div>
-  <p><a class="btn btn-primary btn-lg glyphicon glyphicon-chevron-left" href="#/" role="button"></a></p>
+                    <span>
+                        <a class="btn btn-default" role="button">Contact</a>
+                    </span>
+                    <hr>
+                    <h3>Neighboring Community Leaders
+                    </h3>
+                    <div class="subleaders">
+                        <span>
+                            <a class="btn btn-info glyphicon glyphicon-user" role="button">
+                                {{person.friends[0].name}}</a>
+                            <br>
+                            <h4 class="glyphicon glyphicon-home">
+                                {{person.friends[0].city}}</h4>
+                        </span>
+                        <span>
+                            <a class="btn btn-info glyphicon glyphicon-user" role="button">
+                                {{person.friends[1].name}}</a>
+                            <br>
+                            <h4 class="glyphicon glyphicon-home">
+                                {{person.friends[1].city}}</h4>
+                        </span>
+                        <span>
+                            <a class="btn btn-info glyphicon glyphicon-user" role="button">
+                                {{person.friends[2].name}}</a>
+                            <br>
+                            <h4 class="glyphicon glyphicon-home">
+                                {{person.friends[2].city}}</h4>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            <span>
+                <a class="btn btn-primary btn-lg glyphicon glyphicon-chevron-left" href="#/" role="button"></a>
+            </span>
+        </div>
+
+    </div>
+
 </div>

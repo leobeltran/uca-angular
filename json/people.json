@@ -42,15 +42,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Perry Pate"
+        "name": "Perry Pate",
+        "city": "Clarksdale"
       },
       {
         "id": 1,
-        "name": "Aguilar Summers"
+        "name": "Aguilar Summers",
+        "city": "Summerville"
       },
       {
         "id": 2,
-        "name": "Weeks Baird"
+        "name": "Weeks Baird",
+        "city": "Parks"
       }
     ],
     "greeting": "Hello, Hardin! You have 9 unread messages.",
@@ -100,15 +103,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Pugh Sparks"
+        "name": "Pugh Sparks",
+        "city": "Seymore"
       },
       {
         "id": 1,
-        "name": "Cross Wooten"
+        "name": "Cross Wooten",
+        "city": "Hillside"
       },
       {
         "id": 2,
-        "name": "Jo Spears"
+        "name": "Jo Spears",
+        "city": "Jupiter"
       }
     ],
     "greeting": "Hello, Vonda! You have 10 unread messages.",
@@ -157,15 +163,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Crosby Harper"
+        "name": "Crosby Harper",
+        "city": "Guille"
       },
       {
         "id": 1,
-        "name": "Bell Rivers"
+        "name": "Bell Rivers",
+        "city": "Chase"
       },
       {
         "id": 2,
-        "name": "Adams Vance"
+        "name": "Adams Vance",
+        "city": "Renton"
       }
     ],
     "greeting": "Hello, Skinner! You have 5 unread messages.",
@@ -214,15 +223,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Stacy Porter"
+        "name": "Stacy Porter",
+        "city": "Iowa City"
       },
       {
         "id": 1,
-        "name": "Holly Kelly"
+        "name": "Holly Kelly",
+        "city": "Haleside"
       },
       {
         "id": 2,
-        "name": "Hamilton Becker"
+        "name": "Hamilton Becker",
+        "city": "Curry"
       }
     ],
     "greeting": "Hello, Thelma! You have 10 unread messages.",
@@ -271,15 +283,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Park Salinas"
+        "name": "Park Salinas",
+        "city": "Ferson"
       },
       {
         "id": 1,
-        "name": "Maureen Fuentes"
+        "name": "Maureen Fuentes",
+        "city": "Portship"
       },
       {
         "id": 2,
-        "name": "Hilda Holmes"
+        "name": "Hilda Holmes",
+        "city": "Nacros"
       }
     ],
     "greeting": "Hello, Mattie! You have 7 unread messages.",
@@ -328,15 +343,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Franks Burks"
+        "name": "Franks Burks",
+        "city": "Goter"
       },
       {
         "id": 1,
-        "name": "Barker Morales"
+        "name": "Barker Morales",
+        "city": "Bridgeriver"
       },
       {
         "id": 2,
-        "name": "Margie Howe"
+        "name": "Margie Howe",
+        "city": "Maplebrook"
       }
     ],
     "greeting": "Hello, Page! You have 9 unread messages.",
@@ -385,15 +403,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Booth Cole"
+        "name": "Booth Cole",
+        "city": "Hazad"
       },
       {
         "id": 1,
-        "name": "Stein Hood"
+        "name": "Stein Hood",
+        "city": "Strene"
       },
       {
         "id": 2,
-        "name": "Rosemarie Atkinson"
+        "name": "Rosemarie Atkinson",
+        "city": "West Prairie"
       }
     ],
     "greeting": "Hello, Holt! You have 5 unread messages.",
@@ -442,15 +463,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Long Chan"
+        "name": "Long Chan",
+        "city": "Haven"
       },
       {
         "id": 1,
-        "name": "Sawyer Justice"
+        "name": "Sawyer Justice",
+        "city": "Brooks"
       },
       {
         "id": 2,
-        "name": "Lila Miranda"
+        "name": "Lila Miranda",
+        "city": "Mongrove"
       }
     ],
     "greeting": "Hello, Brenda! You have 10 unread messages.",
@@ -499,15 +523,18 @@
     "friends": [
       {
         "id": 0,
-        "name": "Luz Fleming"
+        "name": "Luz Fleming",
+        "city": "Coral City"
       },
       {
         "id": 1,
-        "name": "Brandi Hendrix"
+        "name": "Brandi Hendrix",
+        "city": "Yepeche"
       },
       {
         "id": 2,
-        "name": "Shaffer Rush"
+        "name": "Shaffer Rush",
+        "city": "St. Holan"
       }
     ],
     "greeting": "Hello, Myrna! You have 7 unread messages.",

@@ -3,11 +3,12 @@ body,html{
   overflow-x:hidden;
 }
 
-.header{
+.mainheader{
   background-image: url("/img/aerial-neighborhood.jpg");
   background-size: cover;
   background-position: center;
   height: 20rem;
+  text-align: center;
 }
 .main{
   width: 95%;
@@ -38,30 +39,79 @@ h1{
   margin: 10rem;
 }
 
+
+#detail{
+  margin: 2rem 5rem 0 5rem;
+  padding: 2rem;
+}
+
 .jumbotron{
-  margin: 0 auto;
-  padding: 2rem 65rem 5rem 65rem;
+  margin: 2rem 10rem 4rem 10rem;
 }
 
 .form{
   margin: 2rem auto;
-  background: grey;
+  background: rgba(204, 230, 233, 0.61);
   height: 80rem;
   padding: 2rem 7rem 1rem 7rem;
+  border-radius: 3rem;
 }
 
-.container{
+.container{;
   padding: 0 5rem 0 5rem;
-  background-color: pink;
 }
 
 .about{
-  background-color: grey;
   padding: 2rem 7rem 1rem 7rem;
   height: 80rem;
 }
 
 .title{
-  height: 20rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem:
+  height: 10rem;
+  /*background-color: rgba(90, 185, 185, 0.81);*/
+}
 
+section{
+  /*background-color: red;*/
+  padding: 5rem 20rem 0 20rem;
+
+}
+
+#register{
+  /*background-color: yellow;*/
+  border-radius: 3rem;
+
+}
+
+.subleaders{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+}
+
+.header{
+  text-align: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+footer{
+  height: 7rem;
+  border-top: 1px solid rgba(22, 108, 140, 0.84);
+}
+
+
+
+
+/*about*/
+
+#about{
+  background-image: url(/img/communityphoto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60rem;
 }
