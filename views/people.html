@@ -1,36 +1,76 @@
 <tabset>
 <tab heading="Leaders Near You">
-
   <div class="input-group">
     <span class="input-group-btn">
-      <input style="width:400px" type="text" class="form-control" placeholder="Search by name...">
-      <button class="btn btn-default" type="button">Go!</button>
+      <input ng-model="query" style="width:400px" type="text" class="form-control" placeholder="Search...">
     </span>
-  </div><!-- /input-group -->
-
+  </div>
   <div class="leaders">
-
-    <div class="col-sm-5 col-md-2" ng-repeat="people in peoples">
-        <div class="thumbnail">
-            <img style="width:250px;height:250px;" src={{people.picture}} alt="...">
-            <div class="caption">
+    <div class="row">
+      <div class="col-sm-5 col-md-2" ng-repeat="people in peoples | filter: query | orderBy: 'name.last'" >
+          <div class="thumbnail">
+              <img style="width:250px;height:250px;" src={{people.picture}} alt="{{people.name.fist}} {{people.name.last}}">
+              <div class="caption">
                 <h3>{{people.name.first}} {{people.name.last}}</h3>
                 <p>{{people.email}}</p>
                 <p>
-                    <a href="#/{{people.index}}" class="btn btn-primary" role="button">More Info</a>
-                    <!-- <a href="#/{{people.index}}">More Info</a> -->
-                    <a href="#" class="btn btn-default" role="button">Contact</a>
-
+                  <a href="#/{{people.index}}" class="btn btn-primary" role="button">More Info</a>
+                  <a href="#" class="btn btn-default" role="button">Contact</a>
                 </p>
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
     </div>
-
   </div>
 
 </tab>
 
-<tab heading="tab 2" class="main">
-  <h3>This is tab 2</h3>
+<tab heading="Register Community" class="main">
+  <div class="container">
+    <div class="title">
+      <h2>Register Your Community</h2>
+    </div>
+    <div class="form">
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon1">
+        <input type="text" class="form-control" placeholder="First name" aria-describedby="sizing-addon1">
+        <input type="text" class="form-control" placeholder="Last name" aria-describedby="sizing-addon1">
+        </span>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon  glyphicon glyphicon-inbox" id="sizing-addon1">
+        <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
+        </span>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon glyphicon glyphicon-globe" id="sizing-addon1">
+        <input type="text" class="form-control" placeholder="Community Location" aria-describedby="sizing-addon1">
+        </span>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon1">
+        <input type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
+        </span>
+      </div>
+    </div>
+  </div>
+</tab>
+
+<tab heading="About">
+  <div class="container">
+    <div class="title-detail">
+      <h2>"hello"</h2>
+    </div>
+    <div class="about">
+      <small>ABOUT</small>
+      <h2>United Communities Association</h2>
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </span>
+    </div>
+
+
+
+  </div>
 </tab>
 </tabset>

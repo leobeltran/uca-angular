@@ -1,3 +1,8 @@
+
+body,html{
+  overflow-x:hidden;
+}
+
 .header{
   background-image: url("/img/aerial-neighborhood.jpg");
   background-size: cover;
@@ -27,4 +32,36 @@ h1{
 
 .input-group{
   margin: 5rem;
+}
+
+.row{
+  margin: 10rem;
+}
+
+.jumbotron{
+  margin: 0 auto;
+  padding: 2rem 65rem 5rem 65rem;
+}
+
+.form{
+  margin: 2rem auto;
+  background: grey;
+  height: 80rem;
+  padding: 2rem 7rem 1rem 7rem;
+}
+
+.container{
+  padding: 0 5rem 0 5rem;
+  background-color: pink;
+}
+
+.about{
+  background-color: grey;
+  padding: 2rem 7rem 1rem 7rem;
+  height: 80rem;
+}
+
+.title{
+  height: 20rem;
+
 }
