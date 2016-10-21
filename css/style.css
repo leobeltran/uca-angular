@@ -45,7 +45,7 @@ h1{
   padding: 2rem;
 }
 
-.jumbotron{
+.detail{
   margin: 2rem 10rem 4rem 10rem;
 }
 
@@ -114,4 +114,8 @@ footer{
   background-repeat: no-repeat;
   background-position: center;
   height: 60rem;
+}
+
+#backhome{
+  margin-left: 5rem;
 }

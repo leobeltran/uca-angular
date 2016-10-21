@@ -1,0 +1,15 @@
+{
+  "name": "uca-angular",
+  "version": "1.0.0",
+  "description": "United Community Association",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --port 3005 --files ./*"
+  },
+  "author": "Leo Beltran and Rancel Iglesias",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.17.3",
+    "dev": "^0.1.3"
+  }
+}

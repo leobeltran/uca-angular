@@ -16,16 +16,28 @@
       });
   })
 
-  .controller('PeopleListCtrl', function ($scope, $http){
-    $http.get('json/people.json').success(function(data) {
-      $scope.peoples = data;
-    });
+  .factory('people', function($http){
+    return{
+      list: function(callback){
+        $http({
+          method: 'GET',
+          url: 'json/people.json',
+          cache: true
+        }).success(callback)
+      },
+    }
   })
 
-  .controller('PersonDetailCtrl', function($scope,$routeParams,$http){
+  .controller('PeopleListCtrl', function ($scope,people){
+    people.list(function(people){
+      $scope.peoples = people;
+    })
+  })
+
+  .controller('PersonDetailCtrl', function($scope,$routeParams,people){
     $scope.id = $routeParams.id;
-    $http.get('json/people.json').success(function(data){
-      $scope.person = data.filter(function(entry){
+    people.list(function(people){
+      $scope.person = people.filter(function(entry){
         if(entry.index == $scope.id){
           return entry;
         }
@@ -48,6 +60,7 @@
       }
     }
   })
+
   .directive('tabset', function(){
     return {
       restrict: 'E',
